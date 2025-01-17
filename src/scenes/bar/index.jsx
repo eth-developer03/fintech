@@ -19,6 +19,7 @@ const FAQ = () => {
           <Typography color={colors.greenAccent[500]} variant="h5">
           What is Portfolio Optimization?
           </Typography>
+
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

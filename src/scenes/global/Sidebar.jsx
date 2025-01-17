@@ -329,6 +329,7 @@ console.log("users",user);
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
         },
+        height: "100vh",
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -377,7 +378,7 @@ console.log("users",user);
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  {user ? user.firstName : "User Name"} {/* Display logged-in user's name */}
+                  {user ? user.firstName : "User Name"} 
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   {user ? user.primaryEmailAddress.emailAddress : "Guest"}
@@ -386,7 +387,9 @@ console.log("users",user);
             </Box>
           )}
 
-          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+          <Box paddingLeft={isCollapsed ? undefined : "10%"}
+          className="h-full overflow-y-auto"
+          >
             <Item
               title="Dashboard"
               to="/"

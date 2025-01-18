@@ -20,6 +20,7 @@ import PinchIcon from '@mui/icons-material/Pinch';
 import PriceChangeIcon from '@mui/icons-material/PriceChange';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import { useUser } from "@clerk/clerk-react"; 
+import RestoreIcon from '@mui/icons-material/Restore';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -199,7 +200,30 @@ console.log("users",user);
               selected={selected}
               setSelected={setSelected}
             />
+                <Item
+              title="ESG"
+              to="/esg"
+              icon={<RestoreIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
 
+        <Item
+              title="News Dashboard"
+              to="/news"
+              icon={<BarChartOutlinedIcon />}
+   
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+    <Item
+              title="Stock Analysis"
+              to="/stockanalysis"
+              icon={<MonetizationOnIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
 
 
             <Typography
@@ -216,20 +240,14 @@ console.log("users",user);
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Chatbot"
-              to="/pie"
-              icon={<PeopleOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+{/*           
             <Item
               title="About Us"
               to="/line"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
           </Box>
         </Menu>
       </ProSidebar>

@@ -12,7 +12,7 @@ import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import { useEffect, useState } from "react";
 
-
+import StockNews from "../stock/index";
 
 
 
@@ -225,46 +225,7 @@ const Dashboard = () => {
         </Box>
 
         
-        
-        <Box
-          gridColumn="span 12"
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-          p="30px"
-        >  
 
-        
-          
-          <div>
-                <div>
-            <h2 className=" my-2 text-xl font-bold">Stock Market News</h2>
-            <StockNews />
-            <ul style={{
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)', 
-  gap: '20px', 
-  listStyleType: 'none'
-}}>
-  {news.map((article, index) => (
-    <li key={index} style={{ marginBottom: '20px' }}>
-      <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', color: 'white', gap: '10px' }}>
-        {article.urlToImage && (
-          <img className=" h-[20vh]" src={article.urlToImage} alt={article.title} style={{ maxWidth: '100%'}} />
-        )}
-        <span>{article.title}</span>
-      </a>
-    </li>
-  ))}
-</ul>
-
-
-          </div>
-          </div>
-          
-         
-         
-        </Box>
-         
         
       </Box>
       

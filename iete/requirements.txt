@@ -3,3 +3,10 @@ pandas
 yfinance
 streamlit
 plotly
+requests
+statsmodels
+matplotlib
+phi-agent
+phi-tools
+duckduckgo-search
+duckdb

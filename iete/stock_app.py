@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 # Define Alpha Vantage API key and URL
-API_KEY = 'YOUR_ALPHA_VANTAGE_API_KEY'  # Replace with your API key
+API_KEY = '5JJ7Q678U2SLO9NG'  # Replace with your API key
 BASE_URL = "https://www.alphavantage.co/query"
 
 

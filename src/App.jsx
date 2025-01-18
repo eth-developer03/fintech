@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Topbar from './scenes/global/Topbar';
 import Sidebar from './scenes/global/Sidebar';
 import Dashboard from './scenes/dashboard';
-
+import PortfolioOptimization from './scenes/portfolio/portfolioOptimization';
 import Invoices from './scenes/invoices';
 import Contacts from './scenes/contacts';
 import Bar from './scenes/bar';
@@ -25,6 +25,9 @@ import {
   useClerk,
   useUser,
 } from '@clerk/clerk-react';
+import MutualTear from './scenes/mutualfunds';
+import GdpDashboard from './scenes/gdp';
+import CrossBorder from './scenes/crossborder';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -51,6 +54,14 @@ function App() {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />
+                <Route path="/portfolio" element={<PortfolioOptimization />} />
+                <Route path="/mutualfunds" element={<MutualTear/>} />
+                <Route path="/gdp" element={<GdpDashboard/>} />
+                <Route path="/crossborder" element={<CrossBorder/>} />
+
+
+
+
                 <Route path="/form" element={<Form />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Chatbot />} />

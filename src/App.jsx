@@ -28,7 +28,7 @@ import {
 import MutualTear from './scenes/mutualfunds';
 import GdpDashboard from './scenes/gdp';
 import CrossBorder from './scenes/crossborder';
-
+import StockNews from './scenes/stock';
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(false);
@@ -58,7 +58,7 @@ function App() {
                 <Route path="/mutualfunds" element={<MutualTear/>} />
                 <Route path="/gdp" element={<GdpDashboard/>} />
                 <Route path="/crossborder" element={<CrossBorder/>} />
-
+                   <Route path="/stock" element={<StockNews />} />
 
 
 

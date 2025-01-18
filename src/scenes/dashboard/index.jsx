@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const apiKey = 'c7348364d9e146ae9afb04a5e03cc920'; // Replace 'YOUR_API_KEY_HERE' with your actual API key
+      const apiKey = 'c7348364d9e146ae9afb04a5e03cc920'; 
       const url = `https://newsapi.org/v2/everything?q=stock+market+(volatile%20OR%20crash%20OR%20surge)&from=2024-02-16&to=2024-02-16&sortBy=publishedAt&apiKey=${apiKey}`;
       
       try {
@@ -238,6 +238,7 @@ const Dashboard = () => {
           <div>
                 <div>
             <h2 className=" my-2 text-xl font-bold">Stock Market News</h2>
+            <StockNews />
             <ul style={{
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)', 

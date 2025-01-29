@@ -10,3 +10,5 @@ phi-agent
 phi-tools
 duckduckgo-search
 duckdb
+PyPortfolioOpt
+scikit-learn

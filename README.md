@@ -88,3 +88,5 @@ We are a team of passionate developers, data scientists, and financial analysts 
 
 Let’s Invest Smart. Save Smart. Grow Smart.
 
+YouTube Walkthrough:
+https://youtu.be/aSdyOa6Pexg?si=aaBSVPOs__qE1xge
